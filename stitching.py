@@ -1,11 +1,9 @@
-# credit: Juan Carlos Niebles and Ranjay Krishna
-
 import numpy as np
-from skimage import filters
-from skimage.util.shape import view_as_blocks
-from scipy.spatial.distance import cdist
 from scipy.ndimage.filters import convolve
-from utils import pad, unpad
+from scipy.spatial.distance import cdist
+from skimage import filters
+
+from utils import pad
 
 
 def harris_corners(img, window_size=3, k=0.04):
